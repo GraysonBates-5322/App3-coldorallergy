@@ -54,7 +54,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		// Displays the calculated probability results on the webpage
 		function showResults(){ 
 			var resultText = document.getElementById("results");
-			resultText.innerHTML = "Probability it is allergies =" + allergy_count + "<br> Probability it is a cold =" + cold_count; 
+			let allergyPercent = (allergy_count/5) * 100;
+			let coldPercent = (cold_count/5) * 100;
+			resultText.innerHTML = "Probability it is allergies = " + allergyPercent + "<br> Probability it is a cold = " + coldPercent; 
 		}
 
   </script>
